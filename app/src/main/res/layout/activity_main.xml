@@ -28,7 +28,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Goal!!! (+5)"
+        android:text="+5 Goal!!!"
         android:background="#388E3C"
         android:textColor="#FFFFFF"
         android:layout_marginBottom="16dp"/>
@@ -37,7 +37,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Yellow Card (-1)"
+        android:text="-1 Yellow Card"
         android:background="#FFC107"
         android:textColor="#F5F5F5"
         android:layout_marginBottom="16dp"/>
@@ -46,7 +46,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Red Card (-2)"
+        android:text="-2 Red Card"
         android:background="#D32F2F"
         android:textColor="#FFFFFF"
         android:layout_marginBottom="16dp"/>
