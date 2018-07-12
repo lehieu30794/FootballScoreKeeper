@@ -1,6 +1,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:paddingLeft="16dp"
     android:paddingRight="16dp">
@@ -16,7 +23,60 @@
         android:layout_marginTop="16dp"/>
 
     <TextView
-        android:id="@+id/goal_of_team_a"
+        android:id="@+id/score_of_team_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:textColor="#212121"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+5 Goal!!!"
+        android:background="#388E3C"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-1 Yellow Card"
+        android:background="#FFC107"
+        android:textColor="#F5F5F5"
+        android:layout_marginBottom="16dp"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-2 Red Card"
+        android:background="#D32F2F"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Team B"
+        android:textColor="#D32F2F"
+        android:layout_marginBottom="8dp"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/score_of_team_b"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="0"
@@ -52,4 +112,5 @@
         android:layout_marginBottom="16dp"/>
 
 
+</LinearLayout>
 </LinearLayout>
