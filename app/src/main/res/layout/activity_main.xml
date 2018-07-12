@@ -1,122 +1,136 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
     android:paddingLeft="16dp"
     android:paddingRight="16dp">
 
     <LinearLayout
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="16dp"
-            android:text="Team A"
-            android:textColor="#D32F2F"
-            android:textSize="36sp"
-            android:textStyle="bold" />
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/score_of_team_a"
-            android:layout_width="match_parent"
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Team A"
+                android:textColor="#D32F2F"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/score_of_team_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="0"
+                android:textColor="#212121"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#388E3C"
+                android:text="+5 Goal!!!"
+                android:textColor="#FFFFFF" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#FFC107"
+                android:text="-1 Yellow Card"
+                android:textColor="#F5F5F5" />
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#D32F2F"
+                android:text="-2 Red Card"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="0"
-            android:textColor="#212121"
-            android:textSize="36sp"
-            android:textStyle="bold" />
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#455A64" />
 
-        <Button
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:background="#388E3C"
-            android:text="+5 Goal!!!"
-            android:textColor="#FFFFFF" />
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Team B"
+                android:textColor="#D32F2F"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/score_of_team_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="0"
+                android:textColor="#212121"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#388E3C"
+                android:text="+5 Goal!!!"
+                android:textColor="#FFFFFF" />
 
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:background="#FFC107"
-            android:text="-1 Yellow Card"
-            android:textColor="#F5F5F5" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#FFC107"
+                android:text="-1 Yellow Card"
+                android:textColor="#F5F5F5" />
 
 
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:background="#D32F2F"
-            android:text="-2 Red Card"
-            android:textColor="#FFFFFF" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#D32F2F"
+                android:text="-2 Red Card"
+                android:textColor="#FFFFFF" />
+
+
+        </LinearLayout>
     </LinearLayout>
 
-    <View
-        android:layout_width="1dp"
+    <Button
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#455A64"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"/>
-
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="16dp"
-            android:text="Team B"
-            android:textColor="#D32F2F"
-            android:textSize="36sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/score_of_team_b"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:text="0"
-            android:textColor="#212121"
-            android:textSize="36sp"
-            android:textStyle="bold" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:background="#388E3C"
-            android:text="+5 Goal!!!"
-            android:textColor="#FFFFFF" />
-
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:background="#FFC107"
-            android:text="-1 Yellow Card"
-            android:textColor="#F5F5F5" />
-
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:background="#D32F2F"
-            android:text="-2 Red Card"
-            android:textColor="#FFFFFF" />
-
-
-    </LinearLayout>
-</LinearLayout>
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#D32F2F"
+        android:text="Reset"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>
