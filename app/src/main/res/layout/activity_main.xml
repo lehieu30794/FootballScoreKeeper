@@ -129,7 +129,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:background="#D32F2F"
-                android:onClick="subtractTWoForB"
+                android:onClick="subtractTwoForB"
                 android:text="-2 Red Card"
                 android:textColor="#FFFFFF" />
 
