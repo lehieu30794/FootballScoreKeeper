@@ -44,6 +44,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:background="#388E3C"
+                android:onClick="addFiveForA"
                 android:text="+5 Goal!!!"
                 android:textColor="#FFFFFF" />
 
@@ -53,6 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:background="#FFC107"
+                android:onClick="subtractOneForA"
                 android:text="-1 Yellow Card"
                 android:textColor="#F5F5F5" />
 
@@ -62,6 +64,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:background="#D32F2F"
+                android:onClick="subtractTwoForA"
                 android:text="-2 Red Card"
                 android:textColor="#FFFFFF" />
         </LinearLayout>
@@ -106,6 +109,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:background="#388E3C"
+                android:onClick="addFiveForB"
                 android:text="+5 Goal!!!"
                 android:textColor="#FFFFFF" />
 
@@ -115,6 +119,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:background="#FFC107"
+                android:onClick="subtractOneForB"
                 android:text="-1 Yellow Card"
                 android:textColor="#F5F5F5" />
 
@@ -124,6 +129,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:background="#D32F2F"
+                android:onClick="subtractTWoForB"
                 android:text="-2 Red Card"
                 android:textColor="#FFFFFF" />
 
@@ -139,6 +145,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="48dp"
         android:background="#D32F2F"
+        android:onClick="resetScore"
         android:text="Reset"
         android:textColor="#FFFFFF" />
 </RelativeLayout>
